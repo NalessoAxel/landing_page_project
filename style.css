@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; */
+    background: url(/assets/bg-01.jpeg);
+}
+
+.container-cube {
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 15s infinite linear;
+}
+
+.face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.top {
+
+    background: url(/assets/photo_profil.jpeg);
+    background-size: contain;
+
+     transform: rotateX(90deg) translateZ(50px);
+}
+
+.bottom {
+    background: url(/assets/photo_profil.jpeg);
+    background-size: contain;
+    transform: rotateX(-90deg) translateZ(50px);
+}
+
+.right {
+    background: url(/assets/photo_profil.jpeg);
+    background-size: contain;
+    transform: rotateY(90deg) translateZ(50px)
+}
+
+.left {
+    background: url(/assets/photo_profil.jpeg);
+    background-size: contain;
+    transform: rotateY(-90deg) translateZ(50px)
+}
+
+.front {
+    background: url(/assets/photo_profil.jpeg);
+    background-size: contain;
+    transform: rotateX(0deg) translateZ(50px);
+}
+
+.back {
+    background: url(/assets/photo_profil.jpeg);
+    background-size: contain;
+    transform: rotateY(-180deg) translateZ(50px)
+}
+
+@keyframes spin {
+    from {
+        transform: rotateX(0deg) rotateY(0deg)
+    }
+
+    to {
+        transform: rotateX(360deg) rotateY(360deg)
+    }
+}
+
+.date-and-time {
+    font-family: 'Lora', sans-serif;
+    color: #fff;
+    background: #10101E;
+    width: 400px;
+    padding: 15px 10px;
+    border-image-source: 3px solid linear-gradient(to left, #0cbaba 0%, #380036 74%);
+    position: absolute;
+    bottom: 8%;
+    right: 5%;
+  
+    transition: 0.5s;
+}
+
+.date-and-time:hover {
+    background: #2E94E3;
+}
+
+.date {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.time {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time span:not(:last-child) {
+    position: relative;
+    margin: 0 6px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+img {
+    position: relative;
+}
