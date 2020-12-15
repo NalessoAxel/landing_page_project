@@ -12,7 +12,7 @@ body {
     /* display: flex;
     justify-content: flex-end;
     align-items: flex-end; */
-    background: url(/assets/bg-01.jpeg);
+    background: url(./assets/bg-01.jpeg);
 }
 
 .container-cube {
@@ -41,38 +41,38 @@ body {
 
 .top {
 
-    background: url(/assets/photo_profil.jpeg);
+    background: url(./assets/photo_profil.jpeg);
     background-size: contain;
 
      transform: rotateX(90deg) translateZ(50px);
 }
 
 .bottom {
-    background: url(/assets/photo_profil.jpeg);
+    background: url(./assets/photo_profil.jpeg);
     background-size: contain;
     transform: rotateX(-90deg) translateZ(50px);
 }
 
 .right {
-    background: url(/assets/photo_profil.jpeg);
+    background: url(./assets/photo_profil.jpeg);
     background-size: contain;
     transform: rotateY(90deg) translateZ(50px)
 }
 
 .left {
-    background: url(/assets/photo_profil.jpeg);
+    background: url(./assets/photo_profil.jpeg);
     background-size: contain;
     transform: rotateY(-90deg) translateZ(50px)
 }
 
 .front {
-    background: url(/assets/photo_profil.jpeg);
+    background: url(./assets/photo_profil.jpeg);
     background-size: contain;
     transform: rotateX(0deg) translateZ(50px);
 }
 
 .back {
-    background: url(/assets/photo_profil.jpeg);
+    background: url(./assets/photo_profil.jpeg);
     background-size: contain;
     transform: rotateY(-180deg) translateZ(50px)
 }
